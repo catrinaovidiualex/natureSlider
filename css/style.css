@@ -12,11 +12,12 @@ body{
     width:800px;
     height: 500px;
     border-radius: 10px;
+    overflow:hidden;
 }
 
 .slides{
     display: flex;
-    width:500%;
+    width:700%;
     height: 500px;
 }
 
@@ -26,23 +27,23 @@ body{
 
 .slide{
     width: 20%;
-    transition: 2s;
+    transition: 3s;
 }
 
 .slide img{
-    width: 950px;
+    width: 800px;
     height: 500px;
 }
 
-/*manual navigator*/
+/*manual navigation*/
 
 .navManual{
-   
+    display: flex;
+    justify-content: center;   
     position: absolute;
     width: 800px;
     margin-top: -20px;
-    display: flex;
-    justify-content: center;
+    
 }
 
 .btnManual{
@@ -50,14 +51,14 @@ body{
     padding:5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 4s;
 }
 
 .btnManual:not(:last-child){
     margin-right: 40px;
 }
 .btnManual:hover{
-    background: rgb(135, 233, 164);
+    background: rgb(153, 233, 177);
 }
 
 #radiobtn0:checked ~ .first{
@@ -66,26 +67,66 @@ body{
 }
 
 #radiobtn1:checked ~ .first{
-    margin-left: -20px;
+    margin-left: -20%;
     
 }
 
 #radiobtn2:checked ~ .first{
-    margin-left: -40px;
+    margin-left: -40%;
     
 }
 #radiobtn3:checked ~ .first{
-    margin-left: -60px;
+    margin-left: -60%;
     
 }
 #radiobtn4:checked ~ .first{
-    margin-left: -80px;
+    margin-left: -80%;
     
 }
 #radiobtn5:checked ~ .first{
-    margin-left: -100px;
+    margin-left: -100%;
     
 }
 
 
-/*auto navigator*/
+/*auto navigation*/
+
+.navAuto{
+    position:absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 480px;
+}
+
+.navAuto div{
+    border: 2px solid greenyellow;
+    transition: 1s;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.navAuto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+#radiobtn0:checked ~ .navAuto .btn0Auto{
+background: greenyellow;}
+    
+#radiobtn1:checked ~ .navAuto .btn1Auto{
+background: greenyellow;}
+
+#radiobtn2:checked ~ .navAuto .btn2Auto{
+background: greenyellow;}
+
+#radiobtn3:checked ~ .navAuto .btn3Auto{
+background: greenyellow;}
+
+
+#radiobtn4:checked ~ .navAuto .btn4Auto{
+background: greenyellow;}
+
+#radiobtn5:checked ~ .navAuto .btn5Auto{
+background: greenyellow;}
+    
