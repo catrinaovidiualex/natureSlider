@@ -1,5 +1,5 @@
 var counter=0;
-setIntervat(function(){
+setInterval(function(){
 
     document.getElementById('radiobtn'+counter).checked=true;
     counter++;
@@ -8,4 +8,4 @@ setIntervat(function(){
         counter=0;
 
     }
-},6000);
+},5000);
